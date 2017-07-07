@@ -1,0 +1,49 @@
+// Menu
+// --------------------------------------------------
+.site-nav-toggle {
+  position: static;
+  float: right;
+}
+
+
+.menu {
+  float: right;
+  margin: 8px 0 0 0;
+
+  +mobile() {
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
+
+  br { display: none; }
+
+  .menu-item {
+    margin: 0;
+    +mobile() { display: block; }
+  }
+
+  .menu-item a {
+    padding: 0 10px;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    transition-property: background;
+    color: #999999;
+
+    +mobile() {
+      text-align: left;
+    }
+
+    &:hover { 
+      color: $z_white;
+    }
+  }
+
+  a::before {
+      display: none;
+
+      +mobile() { display: block; }
+    }
+
+  +mobile() { float: none; }
+}
