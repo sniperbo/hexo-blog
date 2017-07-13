@@ -69,9 +69,10 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+## repository: git@github.com:sniperbo/sniperbo.github.io.git
 deploy:
   type: git
-  repository: git@github.com:sniperbo/sniperbo.github.io.git
+  repository: ssh://git@67.218.154.219:26275/var/repo/hexo-blog.git
   branch: master
 
 # social
